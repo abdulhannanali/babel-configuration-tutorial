@@ -43,12 +43,12 @@ npm install --save-dev babel-cli
 
 Now if you run
 ```bash
-babel code/index.js -d dist/
+babel code/index.js -d build/
 ```
 
 #### Plugins and Presets
 
-You will see the same code that you wrote appear in `dist/index.js`. This is where babel **plugins** and **presets** come. Babel doesn't do much on it's own, but, with **plugins** and **presets** it can do a lot. We want all the ES7 and ES6 goodness in our code.
+You will see the same code that you wrote appear in `build/index.js`. This is where babel **plugins** and **presets** come. Babel doesn't do much on it's own, but, with **plugins** and **presets** it can do a lot. We want all the ES7 and ES6 goodness in our code.
 
 In order to do that we'll install two presets as part of our devDependencies
 - [es2015](https://babeljs.io/docs/plugins/preset-es2015/)
