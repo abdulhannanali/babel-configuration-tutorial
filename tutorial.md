@@ -12,6 +12,8 @@ This is where [BabelJS](https://babeljs.io) comes to the rescue. BabelJS is a tr
 ### Some assumptions made
 There are some assumptions I am making about you! YES YOU! You know your way around [Node.JS](https://nodejs.org) and can install packages using [npmjs.com](http://npmjs.com) and you've both of 'em already installed. Also, you are okay with using some CLI sometimes. Also, it's good to know some ES6 or ES7 beforehand but not required.
 
+#### Following along the code
+Type of person who follows code instead of just reading? Code is available here in this [repo](https://github.com/abdulhannanali/babel-configuration-tutorial)
 
 ### Installing and getting started with babeljs
 There's not a single way you will be able to setup Babel. Here we will be discussing enough to get up and running with it.
@@ -33,7 +35,7 @@ console.log(jsRocks.next())
 ```
 
 
-We'll install the babel-cli package by typing this command. This will install the latest stable version of babel-cli for the required project and list it as one of the `devDependencies` in `package.json`
+We'll install the **babel-cli** package by typing this command. This will install the latest stable version of **babel-cli** for the required project and list it as one of the `devDependencies` in `package.json`
 
 ```bash
 npm install --save-dev babel-cli
@@ -44,7 +46,7 @@ Now if you run
 babel code/index.js -d dist/
 ```
 
-You will see the same code that you wrote appear in `dist/index.js`. This is where babel **plugins** and **presets** come. Babel doesn't do much on it's own but with plugins and presets it can do a lot. We want all the ES7 and ES6 goodness in our code.
+You will see the same code that you wrote appear in `dist/index.js`. This is where babel **plugins** and **presets** come. Babel doesn't do much on it's own, but, with **plugins** and **presets** it can do a lot. We want all the ES7 and ES6 goodness in our code.
 
 In order to do that we'll install two presets as part of our devDependencies
 - [es2015](https://babeljs.io/docs/plugins/preset-es2015/)
@@ -100,7 +102,7 @@ errorGen.next()
 errorGen.next()
 ```
 
-We use this command to generate source maps along with the transpiled code *notice the `--source-maps flag`*
+We use this command to generate **source maps** along with the **transpiled** code *notice the `--source-maps flag`*
 ```bash
 babel code/ -d build/ --source-maps
 ```
@@ -121,7 +123,7 @@ In order to simplify the build process even more. You can update your `package.j
 }
 ```
 Now, we can run
-```
+```bash
 npm run build
 ```
 and get all the ES6/ES7 goodness instantly today. :)
@@ -133,3 +135,8 @@ This is a basic tutorial on babel but the Babel world just starts here. It's sur
 These are some of the resources that can even up your game further in the babel world
 - [Learn ES6 and Babel using this detailed tutorial](http://ccoenraets.github.io/es6-tutorial/index.html)
 - [Read the BabelJS docs on setting up Babel (They're helpful)](https://babeljs.io/docs/setup/)
+
+
+##### Source code and Contributions
+Source code for this tutorial is available in this [repo](https://github.com/abdulhannanali/babel-configuration-tutorial).
+If you find some typo or would like to make some update. Please do so using the power of issues and PR in our [Github Repo](https://github.com/abdulhannanali/babel-configuration-tutorial).
