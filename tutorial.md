@@ -1,4 +1,4 @@
-# Configuring babel 6 for node with me
+# Configure Babel 6 for Node.JS
 
 ## A little introduction to babel
 Hi! If you are like me, you are tired of writing the same old ES5 JS Code in your node applications.
