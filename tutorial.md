@@ -56,7 +56,7 @@ In order to do that we'll install two presets as part of our devDependencies
 
 Type the following command in order to install these presets.
 ```bash
-npm install --save-dev es-2015 stage-0
+npm install --save-dev babel-preset-es2015 babel-preset-stage-0
 ```
 In order to access a wide range of babel plug ins click [here](https://babeljs.io/docs/plugins/)
 
